@@ -78,6 +78,8 @@ body {
   font-size: 0.8em;
   color: white;
   letter-spacing: 0.05em;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn--green {
@@ -90,13 +92,34 @@ body {
   box-shadow: 5px 25px 32px 22px rgba(97, 115, 255, 0.11);
 }
 
+.btn--green:hover {
+  background-color: hsl(171, 64%, 26%);
+  box-shadow: 5px 25px 32px 52px rgba(38, 186, 164, 0.11);
+}
+
+.btn--blue:hover {
+  background-color: #4652b3;
+  box-shadow: 5px 25px 32px 52px rgba(97, 115, 255, 0.11);
+}
+
 /* ********************* */
-/* MISE EN PLACE ARTICLE 1 */
+/* MISE EN PLACE ARTICLES */
 /* ******************** */
 
-.article1 {
+.article1,
+.article2,
+.article3,
+.article4 {
   margin: 0 auto;
   text-align: center;
+}
+
+.article1 {
+  margin-bottom: 8rem;
+}
+
+.article2 {
+  margin-bottom: 4rem;
 }
 
 /* header */
@@ -119,6 +142,10 @@ body {
   margin-bottom: 3em;
   line-height: 1.5rem;
   text-shadow: 2px 1px 0px rgba(206, 206, 206, 0.3);
+}
+
+.header__article2-p {
+  margin-bottom: 6rem;
 }
 
 /* container */
@@ -153,4 +180,113 @@ body {
   color: rgb(180, 180, 180);
   text-shadow: 2px 1px 0px rgba(206, 206, 206, 0.3);
   font-size: 0.8em;
+}
+
+.article3__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.article3__advantages:nth-child(2) {
+  margin: 0 1rem 0 1rem;
+}
+
+.article3__advantages-h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.article3__advantages-p {
+  line-height: 1.5rem;
+  color: rgb(180, 180, 180);
+  text-shadow: 2px 1px 0px rgba(206, 206, 206, 0.3);
+  font-size: 0.8em;
+}
+
+.article__logo {
+  width: 100%;
+}
+.article3__advantages-icone1,
+.article3__advantages-icone2,
+.article3__advantages-icone3 {
+  margin-bottom: 2rem;
+}
+.article5 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 8rem;
+}
+
+.article5 img {
+  height: 2.5rem;
+}
+
+.article4__btn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 24.5rem;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
+/* ********************* */
+/* MISE EN PLACE FOOTERS */
+/* ******************** */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  width: 75%;
+  background-color: rgb(243, 240, 240);
+  border-radius: 1em;
+}
+
+.footer__logo {
+  padding-left: 4rem;
+}
+.c-logo {
+  width: 40%;
+  padding-top: 0.5rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1.5;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: rgb(93, 92, 92);
+}
+
+.footer__links1 {
+  margin-left: 5rem;
+}
+
+.footer__links2 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.footer__social-logos {
+  padding-top: 1rem;
+}
+
+.twitter {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.frontendmentor-footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
