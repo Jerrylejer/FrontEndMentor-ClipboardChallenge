@@ -1,5 +1,6 @@
 @import url(../css/reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+@import url(./responsive.css);
 
 /* couleurs */
 /* Strong Cyan: hsl(171, 66%, 44%) */
@@ -22,7 +23,7 @@ body {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem 0 1rem;
+  /* padding: 0 1rem 0 1rem; */
 }
 
 /* ********************* */
@@ -33,19 +34,18 @@ body {
 
 .header {
   width: 100%;
+  position: relative;
   text-align: center;
   margin-bottom: 10rem;
 }
 /* logo et background */
 
-.fond-header {
-  position: relative;
-}
-
 .logo {
   position: absolute;
-  top: 7rem;
-  left: 49.5rem;
+  /* Positionnement exprimé en % pour que le logo se cale responsivement par rapports au bords lors du scale - */
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%); /* compatibilité : ie9+ */
 }
 
 /* Titre et texte */
@@ -223,6 +223,7 @@ body {
 
 .article5 img {
   height: 2.5rem;
+  margin-right: 1rem;
 }
 
 .article4__btn {
